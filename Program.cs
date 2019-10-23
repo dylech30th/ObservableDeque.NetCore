@@ -17,7 +17,7 @@ namespace ObservableDeque.NetCore
 
             var virtualizedObservableDeque = new VirtualizedConcurrentObservableDeque<int>(pageSize, maintained, obCollection);
 
-            while (true)
+            while (Console.ReadLine() != "exit")
             {
                 switch (Console.ReadKey().Key)
                 {
